@@ -14,7 +14,6 @@ function AnalyzeLink() {
     baseLink = linkSegments[0] + "#";
     linkRoute = linkSegments[1];
   }
-  console.log(link);
   return linkRoute;
 } //closes Analyzelink method;
 
@@ -24,8 +23,12 @@ function Router(path) {
     case "":
       break;
 
+    case "/load-csv":
+      ToLoadCSVScreen();
+      break;
+
     case "/404":
-   
+      PageNotFound();
       break;
     default:
       Redirect("/404");

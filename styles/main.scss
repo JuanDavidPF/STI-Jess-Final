@@ -13,6 +13,7 @@
 ---------------------Components
 */
 
+@import './components/_LoadCSVScreen.scss';
 
 * {
 
@@ -20,34 +21,20 @@
 }
 
 html {
-   
+    width: 100%;
 }
 
 body {
-    width: 100%;
-    display: flex;
-    overflow-x: hidden;
-
-
-    .mainWrapper {
-     
-
-        .viewport {
-
-            display: flex;
-            flex-shrink: 0;
-            flex-grow: 0;
-        }
-    }
+    width: 100%;   
 }
-
-
 
 img {
     user-drag: none;
     user-select: none;
 }
 
-a {
-    cursor: pointer;
+
+
+.hidden {
+    display: none;
 }
