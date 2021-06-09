@@ -1,0 +1,62 @@
+/*
+---------------------Utils
+*/
+
+
+@import './utils/_breakpoints.scss';
+@import './utils/_fonts.scss';
+@import './utils/_colors.scss';
+@import './utils/_separation.scss';
+@import './utils/_reset.scss';
+
+/*
+---------------------Containers
+*/
+
+
+/*
+---------------------Components
+*/
+
+@import './_Navbar.scss';
+@import './_PresentationCard.scss';
+@import './_ProjectsCard.scss';
+@import './_MoreAboutMe.scss';
+
+* {
+
+    font-family: $lato;
+}
+
+html {
+   
+}
+
+body {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+
+
+    .mainWrapper {
+     
+
+        .viewport {
+
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+    }
+}
+
+
+
+img {
+    user-drag: none;
+    user-select: none;
+}
+
+a {
+    cursor: pointer;
+}
