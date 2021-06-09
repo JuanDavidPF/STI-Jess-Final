@@ -14,6 +14,7 @@ function AnalyzeLink() {
     baseLink = linkSegments[0] + "#";
     linkRoute = linkSegments[1];
   }
+  console.log(link);
   return linkRoute;
 } //closes Analyzelink method;
 
