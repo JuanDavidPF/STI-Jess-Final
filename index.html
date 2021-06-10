@@ -64,8 +64,68 @@ Universidad ICESI
       </div>
     </section>
 
+    <section class="animate__animated TestScreen hidden">
+      <header></header>
+      <p>
+        ¡Llena el siguiente formulario para poder conocerte un poco mejor! Marca
+        del 0 al 10, siendo 0 el mínimo de puntuación y 10 el máximo.
+      </p>
 
-    <section class="animate__animated TestScreen hidden"></section>
+      <div class="TestContainer"></div>
+      <div class="TestItem TestItem__prefab">
+        <h1>Titulo</h1>
+        <div>
+          <p>Min.</p>
+
+          <input type="radio" name="" value="1" />
+          <input type="radio" name="" value="2" />
+          <input type="radio" name="" value="3" />
+          <input type="radio" name="" value="4" />
+          <input type="radio" checked name="" value="5" />
+          <input type="radio" name="" value="6" />
+          <input type="radio" name="" value="7" />
+          <input type="radio" name="" value="8" />
+          <input type="radio" name="" value="9" />
+          <input type="radio" name="" value="0" />
+          <p>Max.</p>
+        </div>
+      </div>
+
+      <button onclick="FinishTest()">Finalizar Test</button>
+    </section>
+
+    <section class="animate__animated ElectionScreen hidden">
+      <h1>Selecciona un Trabajo</h1>
+      <div class="ElectionScreen__Job1">
+        <h1>Trabajo</h1>
+        <button onclick="ChooseJob1()">Unirme</button>
+        <p>100% de similitud</p>
+      </div>
+
+      <div class="ElectionScreen__Job2">
+        <h1>Trabajo</h1>
+        <button onclick="ChooseJob2()">Unirme</button>
+        <p>100% de similitud</p>
+      </div>
+
+      <div class="ElectionScreen__Job3">
+        <h1>Trabajo</h1>
+        <button onclick="ChooseJob3()">Unirme</button>
+        <p>100% de similitud</p>
+      </div>
+    </section>
+
+    <section class="animate__animated MyJob hidden">
+
+      <h1>My Job</h1>
+      <ul>
+        <li>asd</li>
+        <li>asd</li>
+        <li>asd</li>
+        <li>asd</li>
+      </ul>
+    
+    </section>
 
     <section class="LoadCSVScreen hidden">
       <div>
@@ -101,9 +161,10 @@ Universidad ICESI
     <script src="./source/Screens.js"></script>
     <script src="./source/componets/SplashScreen.js"></script>
     <script src="./source/componets/LoginScreen.js"></script>
+    <script src="./source/componets/MyJobScreen.js"></script>
+    <script src="./source/componets/ElectionScreen.js"></script>
     <script src="./source/componets/TestScreen.js"></script>
     <script src="./source/componets/LoadCSVScreen.js"></script>
-
 
     <!-- Navigations -->
     <script src="./source/Navigation.js"></script>

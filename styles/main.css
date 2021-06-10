@@ -147,7 +147,6 @@ a {
 }
 
 input {
-  -webkit-appearance: none;
   border-radius: 0;
 }
 
@@ -297,8 +296,190 @@ input {
 
 .TestScreen {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TestScreen header {
+  width: 100%;
+  height: 200px;
+  background-image: url("./../public/resources/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.TestScreen p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 100px 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.TestScreen .TestItem {
+  padding: 25px 100px;
+}
+
+.TestScreen .TestItem h1 {
+  margin-top: 30px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+
+.TestScreen .TestItem div {
+  margin: 50px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TestScreen .TestItem div p {
+  margin: 0;
+}
+
+.TestScreen .TestItem div input {
+  height: 20px;
+  width: 20px;
+}
+
+.TestScreen .TestItem.TestItem__prefab {
+  display: none;
+}
+
+.TestScreen .TestContainer {
+  width: 100%;
+}
+
+.TestScreen button {
+  margin: 50px 0;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
+  max-width: 400px;
+  width: 100%;
+  -webkit-box-shadow: #0000003d 0 4px 4px 2px;
+          box-shadow: #0000003d 0 4px 4px 2px;
+  border-radius: 15px;
+  font-size: 24px;
+  border-style: none;
+  font-weight: 500;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #1290D7;
+  cursor: pointer;
+}
+
+.TestScreen button:hover {
+  background-color: #116799;
+}
+
+.ElectionScreen {
+  width: 100%;
   height: 100vh;
-  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ElectionScreen h1 {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-size: 40px;
+  top: 100px;
+}
+
+.ElectionScreen div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ElectionScreen div h1 {
+  position: static;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+.ElectionScreen div button {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
+  width: 100%;
+  -webkit-box-shadow: #0000003d 0 4px 4px 2px;
+          box-shadow: #0000003d 0 4px 4px 2px;
+  border-radius: 15px;
+  font-size: 28px;
+  border-style: none;
+  font-weight: 500;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #1290D7;
+  cursor: pointer;
+}
+
+.ElectionScreen div button:hover {
+  background-color: #116799;
+}
+
+.ElectionScreen div p {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.MyJob {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MyJob h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.MyJob ul {
+  margin: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
 }
 
 * {

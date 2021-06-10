@@ -42,6 +42,24 @@ const ToTest = () => {
   }, 1000);
 }; //closes ToTest method
 
+const ToElection = () => {
+  DeactivateScreens();
+  ElectionScreen.classList.remove("hidden");
+  ElectionScreen.classList.add("animate__fadeIn");
+  setTimeout(() => {
+    ElectionScreen.classList.remove("animate__fadeIn");
+  }, 1000);
+}; //closes ToTest method
+
+const ToMyJob = () => {
+  DeactivateScreens();
+  MyJobScreen.classList.remove("hidden");
+  MyJobScreen.classList.add("animate__fadeIn");
+  setTimeout(() => {
+    MyJobScreen.classList.remove("animate__fadeIn");
+  }, 1000);
+}; //closes ToTest method
+
 const ToLoadCSVScreen = () => {
   DeactivateScreens();
   LoadCSVScreen.classList.remove("hidden");
@@ -56,4 +74,6 @@ const DeactivateScreens = () => {
   LoadCSVScreen.classList.add("hidden");
   SplashScreen.classList.add("hidden");
   LoginScreen.classList.add("hidden");
+  ElectionScreen.classList.add("hidden");
+  MyJobScreen.classList.add("hidden");
 }; //closes DeactivateScreens method

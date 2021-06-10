@@ -1,14 +1,8 @@
-
-
 //JSON database
 let skillsJSON;
 let occupationsJSON = [];
 let participantsJSON = [];
-let groupsJSON = {
-  Group1: [],
-  Group2: [],
-  Group3: [],
-};
+
 
 //File Inputs
 document
@@ -80,9 +74,7 @@ function LoadOccupationDatabase(evt) {
 
 function LoadparticipantsDatabase(evt) {
   participantsJSON = [];
-  groupsJSON.Group1 = [];
-  groupsJSON.Group2 = [];
-  groupsJSON.Group3 = [];
+
 
   var file = evt.target.files[0];
   var reader = new FileReader();
@@ -102,7 +94,7 @@ function LoadparticipantsDatabase(evt) {
         let participant = {
           Name: element.Nombre,
           Skills: {},
-          Group: element.Grupo,
+      
         };
         delete element.Nombre;
         delete element.Grupo;
@@ -202,52 +194,8 @@ const UploadParticipantsCSV = () => {
           db.collection("Participantes").doc(participant.Name).set({
             Nombre: participant.Name,
             Habilidades: participant.Skills,
+            Trabajo: "",
           });
-
-          switch (participant.Group) {
-            case "Grupo 1":
-              groupsJSON.Group1.push(participant.Name);
-              break;
-
-            case "Grupo 2":
-              groupsJSON.Group2.push(participant.Name);
-              break;
-
-            case "Grupo 3":
-              groupsJSON.Group3.push(participant.Name);
-              break;
-          }
-        });
-
-        ////////////////////////////
-        //Clear Groups in database
-        ////////////////////////////
-        db.collection("Grupos").doc("Grupo 1").set({
-          Participantes: [],
-        });
-
-        db.collection("Grupos").doc("Grupo 2").set({
-          Participantes: [],
-        });
-
-        db.collection("Grupos").doc("Grupo 3").set({
-          Participantes: [],
-        });
-
-        ////////////////////////////
-        //Uploading Participants to its respectve group
-        ////////////////////////////
-
-        db.collection("Grupos").doc("Grupo 1").set({
-          Participantes: groupsJSON.Group1,
-        });
-
-        db.collection("Grupos").doc("Grupo 2").set({
-          Participantes: groupsJSON.Group2,
-        });
-
-        db.collection("Grupos").doc("Grupo 3").set({
-          Participantes: groupsJSON.Group3,
         });
       });
   } else alert("No has subido una base de datos");

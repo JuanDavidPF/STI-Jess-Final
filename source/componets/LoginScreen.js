@@ -62,6 +62,7 @@ const LogIn = () => {
 const CreateUser = (Nombre) => {
   let User = {
     Nombre: Nombre,
+    Trabajo:"",
     Habilidades: {},
   };
   CurrentUser = User;

@@ -28,14 +28,34 @@ function Router(path) {
       ToLogin();
       break;
 
- 
+    case "/test":
+      if (!CurrentUser) {
+        Redirect("/login");
+      } else {
+        ToTest();
+        LoadTests();
+      }
 
-      case "/test":
-      ToTest();
-      // if (!CurrentUser) {
-      //   Redirect("/login");
-      // }
       break;
+
+    case "/choose":
+      if (!CurrentUser) {
+        Redirect("/login");
+      } else {
+        ToElection();
+      }
+
+      break;
+
+      case "/my-job":
+        if (!CurrentUser) {
+          Redirect("/login");
+        } else {
+          ToMyJob();
+
+        }
+  
+        break;
 
     case "/load-csv":
       ToLoadCSVScreen();
