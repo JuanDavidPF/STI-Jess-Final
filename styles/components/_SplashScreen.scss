@@ -1,14 +1,30 @@
 .SplashScreen {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-image: url("./../public/resources/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+
+
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     img {
-        height: 250px;
-        background-color: red;
+        width: 250px;
+
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #0A5179;
+        font-family: $roboto;
     }
 }

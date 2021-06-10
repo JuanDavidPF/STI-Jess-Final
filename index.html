@@ -24,6 +24,11 @@ Universidad ICESI
     <title>Final STI</title>
 
     <link rel="stylesheet" href="./styles/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <!--
@@ -33,37 +38,34 @@ Universidad ICESI
   -->
 
   <body>
-    <section class="SplashScreen hidden">
-      <img src="./public/resources/images/logo.jpg" alt="logo" srcset="" />
+    <section class="SplashScreen animate__animated hidden">
+      <img src="./public/resources/images/logo.png" alt="logo" srcset="" />
+      <h1>¡Al estar unidos se logran grandes cosas!</h1>
     </section>
 
-    <section class="LoginScreen hidden">
-      <img src="./public/resources/images/logo.jpg" alt="logo" srcset="" />
+    <section class="animate__animated LoginScreen hidden">
+      <img src="./public/resources/images/logo.png" alt="logo" srcset="" />
 
       <div>
-        <select name="group" id="login_selectGroup">
-          <option value="" disabled selected hidden>Escoje un grupo</option>
-          <option value="Grupo 1">Grupo 1</option>
-          <option value="Grupo 2">Grupo 2</option>
-          <option value="Grupo 3">Grupo 3</option>
-        </select>
-
         <select name="name" id="login_selectName">
-         <option value="" disabled selected hidden>Escoje un grupo primero</option>
+          <option value="Unchosen" disabled selected hidden>
+            Escoje un participante
+          </option>
         </select>
+        <input
+          type="text"
+          name="name"
+          id="login_typeName"
+          placeholder="Ingrese su nombre"
+          class="hidden"
+        />
+
+        <button onclick="LogIn()">COMENZAR</button>
       </div>
     </section>
 
-    <section class="PanelScreen hidden">
 
-      
-    </section>
-
-
-    <section class="TestScreen hidden">
-
-      
-    </section>
+    <section class="animate__animated TestScreen hidden"></section>
 
     <section class="LoadCSVScreen hidden">
       <div>
@@ -101,7 +103,7 @@ Universidad ICESI
     <script src="./source/componets/LoginScreen.js"></script>
     <script src="./source/componets/TestScreen.js"></script>
     <script src="./source/componets/LoadCSVScreen.js"></script>
-    <script src="./source/componets/PanelScreen.js"></script>
+
 
     <!-- Navigations -->
     <script src="./source/Navigation.js"></script>

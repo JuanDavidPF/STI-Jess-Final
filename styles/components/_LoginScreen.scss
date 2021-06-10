@@ -1,7 +1,11 @@
 .LoginScreen {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-image: url("./../public/resources/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,23 +13,69 @@
 
     img {
         margin-top: 200px;
-        background-color: red;
-        height: 200px;
+
+        width: 175px;
     }
 
     div {
-        margin-top: 50px;
+        margin-top: 70px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-      
-        width: 350px;
-        height: 150px;
+        max-width: 600px;
+        width: 80%;
+        min-width: 100px;
+
 
         select {
-            height: 50px;
+            font-family: $roboto;
+            height: 65px;
+            width: 100%;
+            padding: 0px 20px;
+            box-shadow: #0000003d 0 4px 4px 2px;
+            border-radius: 15px;
+            font-size: 22px;
+            border-style: none;
+
+
+            option {}
 
         }
+
+        input {
+            margin-top: 25px;
+            font-family: $roboto;
+            height: 65px;
+            width: 100%;
+            padding: 0px 20px;
+            box-shadow: #0000003d 0 4px 4px 2px;
+            border-radius: 15px;
+            font-size: 22px;
+            border-style: none;
+
+        }
+
+        button {
+            margin-top: 25px;
+            font-family: $roboto;
+            height: 65px;
+            width: 100%;
+            box-shadow: #0000003d 0 4px 4px 2px;
+            border-radius: 15px;
+            font-size: 28px;
+            border-style: none;
+            font-weight: 500;
+            color: white;
+            transition: background-color 0.3s ease-in-out;
+            background-color: #1290D7;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #116799;
+            }
+        }
+
+
     }
 
 

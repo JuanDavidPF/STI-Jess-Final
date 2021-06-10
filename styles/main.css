@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .separation-light {
   border-bottom: 2px solid white;
 }
@@ -156,7 +157,11 @@ input {
 .SplashScreen {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-image: url("./../public/resources/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,14 +178,25 @@ input {
 }
 
 .SplashScreen img {
-  height: 250px;
-  background-color: red;
+  width: 250px;
+}
+
+.SplashScreen h1 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0A5179;
+  font-family: "Roboto", sans-serif;
 }
 
 .LoginScreen {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-image: url("./../public/resources/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,12 +211,11 @@ input {
 
 .LoginScreen img {
   margin-top: 200px;
-  background-color: red;
-  height: 200px;
+  width: 175px;
 }
 
 .LoginScreen div {
-  margin-top: 50px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,18 +225,56 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 350px;
-  height: 150px;
+  max-width: 600px;
+  width: 80%;
+  min-width: 100px;
 }
 
 .LoginScreen div select {
-  height: 50px;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
+  width: 100%;
+  padding: 0px 20px;
+  -webkit-box-shadow: #0000003d 0 4px 4px 2px;
+          box-shadow: #0000003d 0 4px 4px 2px;
+  border-radius: 15px;
+  font-size: 22px;
+  border-style: none;
 }
 
-.PanelScreen {
+.LoginScreen div input {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
   width: 100%;
-  background-color: royalblue;
-  height: 100vh;
+  padding: 0px 20px;
+  -webkit-box-shadow: #0000003d 0 4px 4px 2px;
+          box-shadow: #0000003d 0 4px 4px 2px;
+  border-radius: 15px;
+  font-size: 22px;
+  border-style: none;
+}
+
+.LoginScreen div button {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
+  width: 100%;
+  -webkit-box-shadow: #0000003d 0 4px 4px 2px;
+          box-shadow: #0000003d 0 4px 4px 2px;
+  border-radius: 15px;
+  font-size: 28px;
+  border-style: none;
+  font-weight: 500;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #1290D7;
+  cursor: pointer;
+}
+
+.LoginScreen div button:hover {
+  background-color: #116799;
 }
 
 .LoadCSVScreen {

@@ -28,11 +28,13 @@ function Router(path) {
       ToLogin();
       break;
 
-    case "/panel":
-      ToPanel();
-      if (!CurrentUser) {
-        Redirect("/login");
-      }
+ 
+
+      case "/test":
+      ToTest();
+      // if (!CurrentUser) {
+      //   Redirect("/login");
+      // }
       break;
 
     case "/load-csv":
