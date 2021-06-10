@@ -1,0 +1,32 @@
+.LoginScreen {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    img {
+        margin-top: 200px;
+        background-color: red;
+        height: 200px;
+    }
+
+    div {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      
+        width: 350px;
+        height: 150px;
+
+        select {
+            height: 50px;
+
+        }
+    }
+
+
+}

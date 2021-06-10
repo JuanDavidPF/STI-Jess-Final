@@ -1,17 +1,43 @@
+/*
+ */
+
+const ToSplash = () => {
+  DeactivateScreens();
+  SplashScreen.classList.remove("hidden");
+
+  setTimeout(() => {
+    Redirect("/login");
+  }, 3000);
+}; //closes ToSplash method
+
+const ToLogin = () => {
+  DeactivateScreens();
+  LoginScreen.classList.remove("hidden");
+}; //closes ToTest method
+
+const ToPanel = () => {
+  DeactivateScreens();
+  PanelScreen.classList.remove("hidden");
+}; //closes ToTest method
 
 const ToTest = () => {
-
-    TestScreen.classList.remove("hidden");
-}; //closes CSVLoadingScreen method
+  DeactivateScreens();
+  TestScreen.classList.remove("hidden");
+}; //closes ToTest method
 
 const ToLoadCSVScreen = () => {
-    TestScreen.classList.add("hidden");
-    LoadCSVScreen.classList.remove("hidden");
-}; //closes CSVLoadingScreen method
-
-
+  DeactivateScreens();
+  LoadCSVScreen.classList.remove("hidden");
+}; //closes ToLoadCSVScreen method
 
 const PageNotFound = () => {
-    LoadCSVScreen.classList.add("hidden");
-    TestScreen.classList.add("hidden");
-}; //closes CSVLoadingScreen method
+  DeactivateScreens();
+}; //closes PageNotFound method
+
+const DeactivateScreens = () => {
+  TestScreen.classList.add("hidden");
+  LoadCSVScreen.classList.add("hidden");
+  SplashScreen.classList.add("hidden");
+  LoginScreen.classList.add("hidden");
+  PanelScreen.classList.add("hidden");
+}; //closes DeactivateScreens method

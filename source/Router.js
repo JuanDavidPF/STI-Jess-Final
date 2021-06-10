@@ -21,7 +21,18 @@ function Router(path) {
   let linkRoute = AnalyzeLink();
   switch (linkRoute) {
     case "":
-      ToTest();
+      ToSplash();
+      break;
+
+    case "/login":
+      ToLogin();
+      break;
+
+    case "/panel":
+      ToPanel();
+      if (!CurrentUser) {
+        Redirect("/login");
+      }
       break;
 
     case "/load-csv":

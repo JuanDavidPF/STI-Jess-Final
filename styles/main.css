@@ -153,6 +153,77 @@ input {
 /*
 ---------------------Components
 */
+.SplashScreen {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SplashScreen img {
+  height: 250px;
+  background-color: red;
+}
+
+.LoginScreen {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LoginScreen img {
+  margin-top: 200px;
+  background-color: red;
+  height: 200px;
+}
+
+.LoginScreen div {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: 150px;
+}
+
+.LoginScreen div select {
+  height: 50px;
+}
+
+.PanelScreen {
+  width: 100%;
+  background-color: royalblue;
+  height: 100vh;
+}
+
 .LoadCSVScreen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,8 +243,8 @@ input {
 }
 
 .TestScreen {
-  width: 100px;
-  height: 200px;
+  width: 100%;
+  height: 100vh;
   background-color: aqua;
 }
 

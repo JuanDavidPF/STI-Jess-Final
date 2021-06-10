@@ -1,5 +1,4 @@
-//Screen
-const LoadCSVScreen = document.querySelector(".LoadCSVScreen");
+
 
 //JSON database
 let skillsJSON;

@@ -33,10 +33,37 @@ Universidad ICESI
   -->
 
   <body>
-    <section class="TestScreen hidden">
-     
+    <section class="SplashScreen hidden">
+      <img src="./public/resources/images/logo.jpg" alt="logo" srcset="" />
     </section>
 
+    <section class="LoginScreen hidden">
+      <img src="./public/resources/images/logo.jpg" alt="logo" srcset="" />
+
+      <div>
+        <select name="group" id="login_selectGroup">
+          <option value="" disabled selected hidden>Escoje un grupo</option>
+          <option value="Grupo 1">Grupo 1</option>
+          <option value="Grupo 2">Grupo 2</option>
+          <option value="Grupo 3">Grupo 3</option>
+        </select>
+
+        <select name="name" id="login_selectName">
+         <option value="" disabled selected hidden>Escoje un grupo primero</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="PanelScreen hidden">
+
+      
+    </section>
+
+
+    <section class="TestScreen hidden">
+
+      
+    </section>
 
     <section class="LoadCSVScreen hidden">
       <div>
@@ -69,8 +96,12 @@ Universidad ICESI
     <script src="./source/papaparse.js"></script>
 
     <!-- Components Behaviour -->
+    <script src="./source/Screens.js"></script>
+    <script src="./source/componets/SplashScreen.js"></script>
+    <script src="./source/componets/LoginScreen.js"></script>
     <script src="./source/componets/TestScreen.js"></script>
     <script src="./source/componets/LoadCSVScreen.js"></script>
+    <script src="./source/componets/PanelScreen.js"></script>
 
     <!-- Navigations -->
     <script src="./source/Navigation.js"></script>
