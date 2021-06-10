@@ -21,6 +21,7 @@ function Router(path) {
   let linkRoute = AnalyzeLink();
   switch (linkRoute) {
     case "":
+      ToTest();
       break;
 
     case "/load-csv":

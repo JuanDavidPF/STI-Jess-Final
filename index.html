@@ -19,8 +19,10 @@ Universidad ICESI
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final STI</title>
+
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
@@ -31,6 +33,11 @@ Universidad ICESI
   -->
 
   <body>
+    <section class="TestScreen hidden">
+     
+    </section>
+
+
     <section class="LoadCSVScreen hidden">
       <div>
         <input type="file" id="skillsDB" name="avatar" accept=".csv" />
@@ -46,7 +53,9 @@ Universidad ICESI
 
       <div>
         <input type="file" id="participantsDB" name="avatar" accept=".csv" />
-        <button onclick="UploadParticipantsCSV()">Actualizar CSV Participantes</button>
+        <button onclick="UploadParticipantsCSV()">
+          Actualizar CSV Participantes
+        </button>
       </div>
     </section>
 
@@ -59,7 +68,8 @@ Universidad ICESI
     <!-- PapaParse -->
     <script src="./source/papaparse.js"></script>
 
-    <!-- Behaviour -->
+    <!-- Components Behaviour -->
+    <script src="./source/componets/TestScreen.js"></script>
     <script src="./source/componets/LoadCSVScreen.js"></script>
 
     <!-- Navigations -->
